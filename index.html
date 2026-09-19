@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0b0b16;
+            color: white;
+        }
+
+        header {
+            background: #15152a;
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #00ffcc;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 30px;
+        }
+
+        nav a:hover {
+            color: #00ffcc;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #11112b, #24104f);
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            color: #00ffcc;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #cccccc;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 30px;
+            background: #00ffcc;
+            color: #000;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .games {
+            padding: 50px 60px;
+            text-align: center;
+        }
+
+        .games h2 {
+            font-size: 35px;
+            margin-bottom: 35px;
+        }
+
+        .game-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .game-card {
+            width: 280px;
+            background: #18182d;
+            padding: 25px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .game-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 0 20px #00ffcc;
+        }
+
+        .game-icon {
+            font-size: 70px;
+            margin-bottom: 15px;
+        }
+
+        .game-card h3 {
+            color: #00ffcc;
+            margin-bottom: 10px;
+        }
+
+        .game-card p {
+            color: #bbbbbb;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #15152a;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">🎮 GAMEZONE</div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#games">Games</a>
+            <a href="#">Leaderboard</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>LEVEL UP YOUR GAME</h1>
+
+        <p>
+            Welcome to GameZone – explore, play and compete
+            with gamers around the world.
+        </p>
+
+        <a href="#games" class="btn">EXPLORE GAMES</a>
+    </section>
+
+    <section class="games" id="games">
+
+        <h2>🔥 Featured Games</h2>
+
+        <div class="game-container">
+
+            <div class="game-card">
+                <div class="game-icon">⚔️</div>
+                <h3>Battle Arena</h3>
+                <p>Enter the battlefield and defeat your opponents.</p>
+            </div>
+
+            <div class="game-card">
+                <div class="game-icon">🏎️</div>
+                <h3>Speed Racer</h3>
+                <p>Race against players and become the fastest racer.</p>
+            </div>
+
+            <div class="game-card">
+                <div class="game-icon">🚀</div>
+                <h3>Space Warriors</h3>
+                <p>Explore the galaxy and fight powerful enemies.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        © 2026 GameZone | All Rights Reserved
+    </footer>
+
+</body>
+</html>
